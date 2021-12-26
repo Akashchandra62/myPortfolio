@@ -1,0 +1,189 @@
+.lines{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: fixed;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.line{
+    width: 45px;
+    height: 6px;
+    background-color: #06cbfff7;
+    margin: 2px 0;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+
+    .lines{
+        display: block;
+    }
+
+    /* .navigation{
+        display: none;
+    } */
+
+    
+    .navigation {
+        z-index: 2;
+        /* width: 80%; */
+        width: 0px;
+        opacity: 0;
+        /* transition: all 1.25s ease; */
+    }
+    
+
+    .main{
+        /* position: absolute;
+        top: 0;
+        left: 0; */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .home{
+        height: fit-content;
+        padding: 5em 3rem;
+    
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        margin: 0.3REM 0;
+    }
+    .btn {
+        width: 54%;  
+        padding: 0.6rem 0rem;
+        font-size: 1rem;
+        
+    }
+
+    .about {
+        /* height: 80vh; */
+        height: fit-content;
+        padding: 3em 2em;
+    }
+
+    .about h2 {
+        margin-bottom: 1em;
+    }
+
+    .about p{
+        text-align: justify;
+        margin: 0.5rem 0rem;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .education {
+        padding: 3rem 2rem;
+        height: fit-content;
+    }
+
+    .education h2 {
+        margin-bottom: 0.8em;
+    }
+
+    .education-section {
+        padding: 0rem;
+    }
+    .edu-short {
+        padding: 1rem 1rem;
+    }
+
+    .edu-short h3{
+        font-size: 1rem;
+    }
+    .edu-short i{
+        height: fit-content;
+    }
+
+    .edu-details {
+        padding: 0.5rem 0.5rem;
+    }
+    .edu-details p {
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+    .skill {
+        padding: 3em 2em;
+        height: fit-content;
+    }
+
+    .skill h2 {
+        font-size: 2rem;
+        margin-bottom: 0.7em;
+    }
+
+    .skill p {
+        font-size: 1rem;
+        word-spacing: 0rem;
+    }
+
+    .skill-box-container {
+        padding: 1rem;
+    }
+
+    .skill-box {
+        width: 100%;
+        height: 25vh;
+        padding: 1rem;
+    }
+
+    .skill h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+    }
+
+    .progress-bar span {
+        left: 11rem;
+    }
+
+    .project {
+        height: fit-content;
+        padding: 4em 2em;
+    }
+
+    .project h2 {
+        margin-bottom: 1em;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+    .contact {
+        height: fit-content;
+        padding: 3em 2em;
+    }
+
+    .contact h2 {
+        margin-bottom: 1em;
+    }
+
+    .contact-box {
+        width: 100%;
+    }
+
+
+  }

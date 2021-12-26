@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif ;
+    scroll-behavior: smooth;
+}
+
+/* MAIN CONTAINER  */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* NAVIGATION MENU CONTAINER */
+.navigation{
+    background-color: #f2f3f7;
+    width:  20%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navigation-item{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 4em 0 ;
+    margin: 0 0rem;
+}
+
+.navigation img{
+    width: 10em;
+    height: 10em;
+    border-radius: 150px;
+    margin-bottom: 1em;
+}
+
+.navigation h2{
+    color: black;
+    letter-spacing: 0.1rem;
+}
+
+.navigation h3{
+    color: #521517;
+    margin-bottom: 1em;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+}
+
+.nav{
+    /* background-color: rgb(100, 87, 114); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    list-style: none;
+    margin: 0.5em 0em;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.7);;
+    font-size: 1.3rem;
+    position: relative;
+    cursor: pointer;
+    padding: 0.2rem 0;
+
+    
+}  
+
+.nav ul li a:hover{
+    color: #67c0ff;
+}
+
+.nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.175rem;
+    background-color: #02487a;
+    transform: scale(0,1);
+    transform-origin: 0% 100%;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li a:hover:before
+{
+    transform: scale(1,1);
+}
+
+
+
+/* MAIN CONTAINER */
+.main{
+    background-color: #e6e9f7;
+    width: 75%;
+    /* height: 200vh; */
+    position: absolute;
+    right: 0vw;
+    
+    
+}
+
+
+/* HOME */
+.home{
+    /* background-color: red; */
+    margin: 0 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 22em 4rem;
+    font-family: "Playfair Display",Georgia,serif;
+    border-bottom: 1px solid #a5b5fc;
+
+}
+
+.home h1{
+    /* font-family: "Playfair Display",Georgia,serif; */
+    font-size: 3.5rem;
+
+}
+
+.home p{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0.2REM 0;
+}
+
+.btn{
+    width: 25%;
+    margin-top: 1rem;
+    padding: 0.7rem 0rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 2px 3px 10px  #888888;
+    border: none;
+}
+
+.btn a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(156, 156, 156);
+}
+
+/* ABOUT SECTION */
+.about{
+    /* background-color: yellow; */
+    height: 100vh;
+    padding: 8em 2em;
+    border-bottom: 1px solid #a5b5fc;
+}
+
+.about h2{
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 2.5rem;
+    margin-bottom: 2em;
+}
+
+.about p{
+    text-align: justify;
+    margin: 0.5rem 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* EDUCATION */
+.education{
+    /* background-color: RED; */
+    height: 100vh;
+    border-bottom: 1px solid #a5b5fc;
+    padding: 4rem 3rem;
+}
+.education h2{
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.8em;
+}
+
+.education-section{
+    /* background-color: brown; */
+    padding: 1rem ;
+}
+
+.edu-name{
+    /* padding: 1rem 2rem; */
+    background-color: rgb(175, 201, 206);
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edu-short{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+    padding: 1rem 2rem;
+}
+.edu-short i{
+    cursor: pointer;
+}
+
+.edu-details{
+    background-color: rgb(153, 198, 207);
+    display: none;
+    width: 100%;    
+    padding: 1rem 1.5rem;
+    transition: display 3s ease;
+}
+
+.edu-details p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* SKILLS SECTION */
+.skill{
+    /* background-color: rgb(96, 96, 243);  */
+    height: 100vh;
+    padding: 6em 2em;
+    border-bottom: 1px solid #a5b5fc;
+}
+
+.skill h2{
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 2.5rem;
+    margin-bottom: 2em;
+}
+
+.skill p{
+    text-align: justify;
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-box-container{
+    /* background-color: brown; */
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skill-box{
+    background-color: white;
+    width: 20%;
+    height: 20vh;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 4px solid rgb(0, 119, 255);
+    /* text-align: center; */
+}
+
+.skill-box h2{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin: 0.6rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(24, 24, 24);
+}
+.progress{
+    height: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #c6c6c7;
+    overflow: visible;
+    border-radius: 10px;
+}
+.progress-bar ,.color-1 {
+    background: #2c98f0;
+    height:6px ;
+    border-radius:10px;
+    position: relative;
+}
+.progress-bar span{
+    position: absolute;
+    color: #2c98f0;
+    font-weight: bold;
+    top: 0.8rem;
+    left: 6rem;
+}
+
+/* PROJECTS */
+.project{
+    /* background-color: red;  */
+    height: 100vh;
+    padding: 6em 2em;
+    border-bottom: 1px solid #a5b5fc;
+}
+
+.project h2{
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 2.5rem;
+    margin-bottom: 2em;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-box{
+    width: 33%;
+    height: 40vh;
+    background-color: white;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 4px 3px 12px rgb(74, 75, 77);
+    margin: 1rem;
+}
+.project-name{
+    /* background-color: brown; */
+    margin-top: 2.8em;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.project-desc{
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+}
+
+.project-desc span{
+    font-size: 1.2rem;
+}
+
+.project-desc span a{
+    text-decoration: none;
+}
+
+.project-desc span a:hover{
+    border-bottom: 2px solid red;
+}
+
+/* CONTACT SECTION */
+.contact{
+    /* background-color: red; */
+    height: 100vh;
+    padding: 6em 2em;
+    border-bottom: 1px solid #a5b5fc;
+}
+
+.contact h2{
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 2.5rem;
+    margin-bottom: 2em;
+}
+
+.contact-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-box{
+    height: 20vh;
+    width: 25%;
+    background-color: white;
+    border-radius: 5px;
+    padding:  1.5rem;
+    margin: 1rem;
+    border-top: 2px solid red;
+    box-shadow: 4px 3px 10px rgb(74, 75, 77);
+    font-weight: bold;
+}
+.mail{
+    width: 29%;
+    padding: 1.5rem 1rem;
+}
+
+.contact-box i{
+    margin-bottom: 0.5rem;
+}
+
+.contact-box a{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+.contact-box span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 0.5rem;
+}
