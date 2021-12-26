@@ -55,7 +55,6 @@ const navigation_btn = document.getElementsByClassName("navigation-btn");
 hamburger.addEventListener("click", ()=>{
 
     if(navigation.style.display == "block"){
-        // navigation.style.transition = "none";
         navigation.style.display = "none";
         navigation.style.width = "0px";
         navigation.style.opacity = "0";
@@ -65,7 +64,6 @@ hamburger.addEventListener("click", ()=>{
         navigation.style.display = "block";
         navigation.style.width = "80%";
         navigation.style.opacity = "0.95";
-        // navigation.style.transition = "all 0.5s ease";
     }
 })
 
